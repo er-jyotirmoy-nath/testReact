@@ -4,14 +4,17 @@
 //let {connect, Provider} = window.ReactRedux
 
      const {createStore} = Redux;
+     let {connect, Provider} = window.ReactRedux;
+
      const store = createStore(allReducer);
+     console.log(store.getState());
  class Reduxcomp extends React.Component {
 
     render() {
         return (
-            <div className="class-name">
-                <h1>Hello</h1>
-            </div>
+            <Provider store={store}>
+              <App />
+            </Provider>
         );
     }
 }

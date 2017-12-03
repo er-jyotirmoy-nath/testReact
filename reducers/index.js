@@ -1,2 +1,5 @@
 const {combineReducers} = Redux;
-const allReducer = combineReducers(userReducer); 
+const allReducer = combineReducers({
+  users:userReducer,
+  activeUser:userActive
+});
