@@ -1,2 +1,2 @@
-# react-components-examples
-"# testReact" 
+# react-redux-example-app
+
