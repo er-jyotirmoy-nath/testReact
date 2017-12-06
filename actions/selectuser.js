@@ -5,3 +5,9 @@ const selectUser = (item)=>{
     payload:item
   }
 }
+const adduser ={users} => {
+  return {
+    type:'USERS_ADDED',
+    payload:users
+  }
+}
